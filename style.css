@@ -1,0 +1,698 @@
+
+
+
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+
+
+}
+
+.lukyuenbackground{
+    margin: 0px;
+    padding: 0px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.555)), url(LukYuen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150vh;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    
+}
+
+.navbar h1{
+ margin-left: 20px;
+ font-family: 'Abril Fatface', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Xanh Mono', monospace;
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 20px;
+font-size: 15px;
+position: relative;
+bottom: -10px;
+cursor: pointer;
+    
+}
+
+.navbar ul li:hover::after{
+content: '';
+height: 3px;
+width: 100%;
+background: greenyellow;
+position: absolute;
+bottom: 0px;
+left: 0px;
+
+}
+    
+.navbar ul li::after{
+content:'';
+height: 3px;
+width: 0;
+background: greenyellow;
+position: absolute;
+bottom: 0px;
+left: 0px;
+transition: 0.5s;
+
+}
+
+.nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+.banner{
+position: relative;
+text-align: center;
+align-items: center;
+justify-content: center;
+top: 35%;
+z-index: 2;
+color: white;   
+font-family: 'Abril Fatface', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Xanh Mono', monospace;
+}
+
+button{
+    width: 200px;
+    cursor: pointer;
+}
+.btn-transparent{
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    height: 30px;
+    padding: 7px;
+    background: transparent;
+    color: white;
+    bottom: 10px;
+    font-size: 5 px;
+    
+}
+
+.btn-transparent:hover{
+    transition: 0.5s;
+    background-color: gray;
+    color: white;
+    }
+
+
+.btn-transparent a{
+text-decoration: none;
+color: white;
+}
+
+
+
+
+
+
+    /*ABOUT US*/
+
+    .lukyuenbackground{
+
+    background-color: brown;
+    }
+
+.aboutus{
+    color: white;
+    text-align: center;
+    width: 520px;
+    height: 300px;
+    margin: auto;
+    color: black;   
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.aboutus h1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Xanh Mono', monospace;
+    color: black;    
+}
+
+
+
+
+
+
+
+
+/*FLEXBOX*/
+.menupage{
+position: relative;
+text-align: center;
+top: 900px;
+}
+
+
+.containerflex{
+background-color: black;
+position: relative;
+height: auto;
+width: auto;
+justify-content:center;
+align-items:center;
+top: 200px;
+}
+
+.containerflex h1{
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+.containerflex ul{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+.containerflex ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  font-size: 15px;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+.containerflex ul li:hover{
+transform: scale(1.1);
+z-index: 3;
+transition: 0.5s;
+
+}
+
+.containerflex ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+
+}
+
+.containerflex ul li a:hover{
+color: goldenrod;
+transition: 0.5s;
+}
+
+
+
+
+.imagegal{
+  position: absolute;
+  border: 1px solid;
+  border-radius: ;
+  width: auto;
+  height: auto;
+  padding: 50px;
+  background-color: rgb(218, 175, 175);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  align-content: space-between;
+  margin-top: 20px;
+ padding-bottom: 20px;
+
+}
+
+.menu-size{
+  border-radius: 50px;
+}
+
+
+
+
+.menu-size:hover{
+transform: scale(1.1);
+z-index: 3;
+transition: 0.5s;
+}
+
+
+
+
+
+
+
+/*MENU*/
+.menu{
+width: 720px;
+height: 220px;
+margin: auto;
+text-align: center;
+color: black;  
+}
+
+
+
+.container{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.column{
+  
+padding: 20px;
+}
+
+
+.menuitem{
+width: 50%;
+height: 350px;
+text-align: Center;
+float: left;
+transition: 0.5s;
+ }
+ 
+
+ .menuitem:hover{
+    transform: scale(1.2);
+    z-index: 3;
+  }
+    
+
+.menudesc{
+padding: 20px;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+  /*CONGEE-MENU*/
+  .congeebody{
+    width: auto;
+    height: 100%;
+    background-image: url(congee1111.jpg);
+  }
+
+  .congeepage{
+    background-image: url(menubackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menulist{
+    background-image: linear-gradient(rgba(58, 49, 49, 0.699), rgba(0, 0, 0, 0.555)),url(congee1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(238, 229, 229);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 70%;
+    text-align: center;
+    color:  white;
+    z-index: 4;
+
+  }
+
+  .menulist p{
+    padding: 10px;
+    text-align: left;
+  }
+  
+
+  .menulist h1{
+    font-family: 'Xanh Mono', monospace;
+  
+  }
+
+
+
+ /*ALACARTE-MENU*/
+
+ .menulist2{
+  background-image: linear-gradient(rgba(58, 49, 49, 0.699), rgba(0, 0, 0, 0.555)),url(alacarte2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: rgb(238, 229, 229);
+  width: 500px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  top: 70%;
+  text-align: left;
+  color:  white;
+  z-index: 4;
+  padding: 20px;
+
+}
+  .alacartebody{
+    background-image: url(alacarte2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    background-color: rgb(15, 13, 13);
+  }
+
+  .alacartepage{
+    background-image: url(menubackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+ /*DIMSUM-MENU*/
+  .menulist3{
+    background-image: linear-gradient(rgba(58, 49, 49, 0.699), rgba(0, 0, 0, 0.555)),url(luk-yuen-tikoy-coconut-milk.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(238, 229, 229);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 70%;
+    text-align: left;
+    color:  white;
+    z-index: 4;
+    padding: 20px;
+
+  }
+
+  .dimsumbody{
+    background-image: url(siopao1111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    background-color: rgb(15, 13, 13);
+  }
+
+  .dimsumpage{
+    background-image: url(menubackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+   .menulist3{
+    background-image: linear-gradient(rgba(58, 49, 49, 0.699), rgba(0, 0, 0, 0.555)),url(luk-yuen-tikoy-coconut-milk.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(238, 229, 229);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 70%;
+    text-align: left;
+    color:  white;
+    z-index: 4;
+    padding: 20px;
+
+  }
+
+  .dimsumbody{
+    background-image: url(alacarte2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    background-color: rgb(15, 13, 13);
+  }
+
+  .dimsumpage{
+    background-image: url(menubackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+  
+
+  
+
+/*NOODLE-MENU*/
+  .menulist4{
+    background-image: linear-gradient(rgba(58, 49, 49, 0.699), rgba(0, 0, 0, 0.555)),url(noodle.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(238, 229, 229);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 70%;
+    text-align: left;
+    color:  white;
+    z-index: 4;
+    padding: 20px;
+
+  }
+
+  .noodlebody{
+    background-image: url(alacarte2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    background-color: rgb(15, 13, 13);
+  }
+
+  .noodlepage{
+    background-image: url(noodle2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+  /*CONTACT AREA*/
+.contact{
+  position: relative;
+  border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    background-color: aquamarine;
+    text-align: center;
+    margin: auto;
+
+  }
+
+  .contact p{
+    color: black;
+    margin-bottom: 0px;
+  }
+
+  .contact h1{
+    color: black  ;
+    font-weight: normal ;
+    margin-top: 0px;
+  }
+
+  .input-form{
+    background: none;
+    border: none;
+    border: 1px solid black;
+    width: 100%;
+    margin: 10px 0px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+
+  .input-textarea{
+    background: none;
+    border: none;
+    border: 1px solid black;
+    width: 100%;
+    margin: 10px 0px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  .contact .btn-transparent{
+    height: 30px;
+    color: black;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .contact .btn-transparent:hover{
+  transition: 0.5s;
+  background-color: gray;
+  color: white;
+  }
+
+
+
+
+
+
+  /*CONTACTUS-WEB*/
+  .contactus{ 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.555)), url(menubackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  margin: 0px;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  height: 180%;
+  margin-left:  auto;
+
+  bottom: ;
+  }
+
+.contactmap{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: 650px;
+  z-index: 5;
+ left: 450px;
+
+}
+
+
+.contactbranch{
+position: relative;
+top: 100px;
+font-family: 'Roboto', sans-serif;
+color: white;
+border-radius: 10px;
+}
+
+
+
+.aboutus1{
+  border: 1px solid;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.555)),url(aboutusimage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: black;   
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Xanh Mono', monospace;
+
+  position: relative;
+  text-align: center;
+
+}
+
+
+.aboutus2 h1{
+  font-family: 'Xanh Mono', monospace;
+
+}
+
+.aboutus2{
+position: absolute;
+font-family: 'Roboto', sans-serif;
+width: auto;
+margin-left: auto;
+color: white;
+top: 10%;
+text-align: center;
+
+}
